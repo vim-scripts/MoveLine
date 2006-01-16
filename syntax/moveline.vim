@@ -6,6 +6,13 @@
 " (c) 2006 Joe Chrzanowski
 " Sonicdev
 " http://sonicdev.net
+" joechrz@gmail.com
+"
+" --------------------------------------------------------------
+" Note: I realize that if you hit f too much, then the line
+" disappears.  I can't figure out how to fix this.  If you do,
+" please let me know.  until then, if you go over, just hit u
+" --------------------------------------------------------------
 map r :call MoveLine(line("."),-1)<cr>k
 map f :call MoveLine(line("."),1)<cr>j
 
