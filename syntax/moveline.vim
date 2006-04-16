@@ -8,14 +8,8 @@
 " http://www.sonicdev.net
 " joechrz@gmail.com
 "
-" --------------------------------------------------------------
-" Note: I realize that if you hit f too much, then the line
-" disappears.  I can't figure out how to fix this.  If you know
-" how, please let me know.  Until then, just hit u if you go too
-" far.
-" --------------------------------------------------------------
 map e :call MoveLine(line("."),-1)<cr>k
-map f :call MoveLine(line("."),1)<cr>j
+map f ddp
 function! MoveLine(curline, shift)
 	let curline=a:curline
 	let shift=a:shift
